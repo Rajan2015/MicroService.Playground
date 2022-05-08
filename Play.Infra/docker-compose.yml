@@ -1,0 +1,15 @@
+# docker run --name micro-mongo -p 63500:27017 -d mongo:latest
+
+version: "3.8"
+
+services:
+  mongo:
+    image: mongo
+    container_name: micro-mongo
+    ports:
+      - "63500:27017"
+    volumes:
+      - mongodbdata:/data/db
+
+volumes:
+  mongodbdata:
