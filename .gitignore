@@ -1,2 +1,5 @@
-Play.Catalog/src/Play.Catalog.Service/bin/*
+Play.Catalog/src/Play.Catalog.Service/bin
 Play.Catalog/src/Play.Catalog.Service/obj/Debug
+Play.Common/src/Play.Common/bin
+Play.Common/src/Play.Common/obj/Debug
+packages
