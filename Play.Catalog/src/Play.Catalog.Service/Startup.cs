@@ -13,7 +13,6 @@ namespace Play.Catalog.Service
     public class Startup
     {
 
-        private ServiceSettings serviceSettings;
 
         public Startup(IConfiguration configuration)
         {
