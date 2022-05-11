@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Play.Common.MassTransit;
 using Play.Common.MongoDB;
 using Play.Inventory.Service.Clients;
 using Play.Inventory.Service.Entities;
@@ -33,19 +34,21 @@ namespace Play.Inventory.Service
         {
 
             services.AddMongo()
-            .AddMongoRepository<InventoryItem>("inventoryItems");
+            .AddMongoRepository<InventoryItem>("inventoryItems")
+            .AddMongoRepository<CatalogItem>("catalogItems")
+            .AddMassTransitWithRabbitMQ();
 
-            Random jitterer = new Random();
-            services.AddHttpClient<CatalogClient>(client =>
-            {
-                client.BaseAddress = new Uri("https://localhost:5001");
-            })
-            .AddTransientHttpErrorPolicy(builder => builder.WaitAndRetryAsync(
-                5,
-                retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt))
-                + TimeSpan.FromMilliseconds(jitterer.Next(0, 1000))))
-            .AddTransientHttpErrorPolicy(builder => builder.CircuitBreakerAsync(3, TimeSpan.FromSeconds(15)))
-            .AddPolicyHandler(Policy.TimeoutAsync<HttpResponseMessage>(1));
+            // Random jitterer = new Random();
+            // services.AddHttpClient<CatalogClient>(client =>
+            // {
+            //     client.BaseAddress = new Uri("https://localhost:5001");
+            // })
+            // .AddTransientHttpErrorPolicy(builder => builder.WaitAndRetryAsync(
+            //     5,
+            //     retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt))
+            //     + TimeSpan.FromMilliseconds(jitterer.Next(0, 1000))))
+            // .AddTransientHttpErrorPolicy(builder => builder.CircuitBreakerAsync(3, TimeSpan.FromSeconds(15)))
+            // .AddPolicyHandler(Policy.TimeoutAsync<HttpResponseMessage>(1));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

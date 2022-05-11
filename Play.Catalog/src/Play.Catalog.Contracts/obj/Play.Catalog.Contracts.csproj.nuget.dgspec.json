@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Personal\\InterviewPrep\\MicroServices\\MicroService.Playground\\Play.Inventory\\src\\Play.Inventory.Service\\Play.Inventory.Service.csproj": {}
+    "D:\\Personal\\InterviewPrep\\MicroServices\\MicroService.Playground\\Play.Catalog\\src\\Play.Catalog.Contracts\\Play.Catalog.Contracts.csproj": {}
   },
   "projects": {
-    "D:\\Personal\\InterviewPrep\\MicroServices\\MicroService.Playground\\Play.Inventory\\src\\Play.Inventory.Service\\Play.Inventory.Service.csproj": {
+    "D:\\Personal\\InterviewPrep\\MicroServices\\MicroService.Playground\\Play.Catalog\\src\\Play.Catalog.Contracts\\Play.Catalog.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Personal\\InterviewPrep\\MicroServices\\MicroService.Playground\\Play.Inventory\\src\\Play.Inventory.Service\\Play.Inventory.Service.csproj",
-        "projectName": "Play.Inventory.Service",
-        "projectPath": "D:\\Personal\\InterviewPrep\\MicroServices\\MicroService.Playground\\Play.Inventory\\src\\Play.Inventory.Service\\Play.Inventory.Service.csproj",
+        "projectUniqueName": "D:\\Personal\\InterviewPrep\\MicroServices\\MicroService.Playground\\Play.Catalog\\src\\Play.Catalog.Contracts\\Play.Catalog.Contracts.csproj",
+        "projectName": "Play.Catalog.Contracts",
+        "projectPath": "D:\\Personal\\InterviewPrep\\MicroServices\\MicroService.Playground\\Play.Catalog\\src\\Play.Catalog.Contracts\\Play.Catalog.Contracts.csproj",
         "packagesPath": "C:\\Users\\rajan.garg\\.nuget\\packages\\",
-        "outputPath": "D:\\Personal\\InterviewPrep\\MicroServices\\MicroService.Playground\\Play.Inventory\\src\\Play.Inventory.Service\\obj\\",
+        "outputPath": "D:\\Personal\\InterviewPrep\\MicroServices\\MicroService.Playground\\Play.Catalog\\src\\Play.Catalog.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rajan.garg\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,24 +40,6 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "dependencies": {
-            "Microsoft.Extensions.Http.Polly": {
-              "target": "Package",
-              "version": "[6.0.4, )"
-            },
-            "Play.Catalog.Contracts": {
-              "target": "Package",
-              "version": "[1.0.0, )"
-            },
-            "Play.Common": {
-              "target": "Package",
-              "version": "[1.0.1, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.6.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -69,9 +51,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

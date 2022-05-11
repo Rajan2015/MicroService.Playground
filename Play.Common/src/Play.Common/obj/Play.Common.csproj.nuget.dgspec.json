@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Personal\\InterviewPrep\\MicroServices\\MicroService.Playground\\Play.Common\\src\\Play.Common\\Play.Common.csproj": {}
+    "d:\\Personal\\InterviewPrep\\MicroServices\\MicroService.Playground\\Play.Common\\src\\Play.Common\\Play.Common.csproj": {}
   },
   "projects": {
-    "D:\\Personal\\InterviewPrep\\MicroServices\\MicroService.Playground\\Play.Common\\src\\Play.Common\\Play.Common.csproj": {
+    "d:\\Personal\\InterviewPrep\\MicroServices\\MicroService.Playground\\Play.Common\\src\\Play.Common\\Play.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Personal\\InterviewPrep\\MicroServices\\MicroService.Playground\\Play.Common\\src\\Play.Common\\Play.Common.csproj",
+        "projectUniqueName": "d:\\Personal\\InterviewPrep\\MicroServices\\MicroService.Playground\\Play.Common\\src\\Play.Common\\Play.Common.csproj",
         "projectName": "Play.Common",
-        "projectPath": "D:\\Personal\\InterviewPrep\\MicroServices\\MicroService.Playground\\Play.Common\\src\\Play.Common\\Play.Common.csproj",
+        "projectPath": "d:\\Personal\\InterviewPrep\\MicroServices\\MicroService.Playground\\Play.Common\\src\\Play.Common\\Play.Common.csproj",
         "packagesPath": "C:\\Users\\rajan.garg\\.nuget\\packages\\",
-        "outputPath": "D:\\Personal\\InterviewPrep\\MicroServices\\MicroService.Playground\\Play.Common\\src\\Play.Common\\obj\\",
+        "outputPath": "d:\\Personal\\InterviewPrep\\MicroServices\\MicroService.Playground\\Play.Common\\src\\Play.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rajan.garg\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Personal\\InterviewPrep\\MicroServices\\MicroService.Playground\\packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,6 +41,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[6.0.1, )"
